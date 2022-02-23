@@ -10,8 +10,6 @@ import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.Path;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.drawable.BitmapDrawable;
@@ -23,7 +21,6 @@ import android.graphics.drawable.shapes.RoundRectShape;
 import android.os.Build;
 import android.text.TextUtils;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -520,7 +517,6 @@ public class ShadowLayout extends FrameLayout {
     }
 
 
-
     //将画笔附上 渐变色
     public void gradient(Paint paint) {
         if (!isClickable) {
@@ -785,7 +781,6 @@ public class ShadowLayout extends FrameLayout {
             }
 
 
-
             //边框颜色的点击
             stroke_color = attr.getColor(R.styleable.ShadowLayout_hl_strokeColor, -101);
             stroke_color_true = attr.getColor(R.styleable.ShadowLayout_hl_strokeColor_true, -101);
@@ -1042,12 +1037,6 @@ public class ShadowLayout extends FrameLayout {
         }
         super.dispatchDraw(canvas);
     }
-
-
-
-
-
-
 
 
     @Override
